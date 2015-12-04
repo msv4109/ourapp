@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1>Welcome, <%=user%> ! </h1>
+</head>
+<body>
+<p>Your current level is<%=level%></p><br>
+<p>Your overall correct rate is<%=correctness%></p><br>
+<p>Your best genre is <%bestgenre%>	</p><br>
+<!--此表格action直接链接到问题1><-->
+    	   <form method="get" action="/question">
+    	   		<p>Pick a genre!</p><br>
+    	   		<select name="genre">
+    	   			<option value="Drama">Drama</option>
+    	   			<option value="Fiction">Fiction</option>
+    	   			<option value="Romance">Romance</option>
+    	   			<option value="Comedy">Comedy</option>
+    	   			<option value="Horror">Horror</option>
+    	   		</select>
+    	   		<p>Pick a difficulity!</p><br>
+    	   		<select name="hardness">
+    	   			<option value="1" >1</option>
+    	   			<option value="2">2</option>
+    	   			<option value="3">3</option> 	   			
+    	   		</select>
+    	   		<button type="submit" class="btn btn-warning btn-lg">game start！</button>
+			</form>	
+</body>
+</html>
